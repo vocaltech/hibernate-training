@@ -30,22 +30,22 @@ public class Song {
 #### Save a song in a table with Hibernate
 
 1. Open a SessionFactory
-> `SessionFactory sf = HibernateUtils.getSessionFactory();`
+    > `SessionFactory sf = HibernateUtils.getSessionFactory();`
 2. Using the SessionFactory, open a session
-> `Session session = sf.openSession();`
+    > `Session session = sf.openSession();`
 3. Create an object
-> ```
-> Song song1 = new Song();
-> song1.setSongName("songName1");
-> song1.setArtist("artist1");
-> System.out.println(song1);
-> ```
+    > ```
+    > Song song1 = new Song();
+    > song1.setSongName("songName1");
+    > song1.setArtist("artist1");
+    > System.out.println(song1);
+    > ```
 
 4. Save the object in a transaction
-> ```
-> Transaction transaction = session.beginTransaction();
-> session.persist(song1);
-> transaction.commit();
-> ```
+    > ```
+    > Transaction transaction = session.beginTransaction();
+    > session.persist(song1);
+    > transaction.commit();
+    > ```
 
 [Complete code](https://github.com/vocaltech/hibernate-training/blob/master/src/main/java/fr/vocaltech/hibernate/HibernateApp.java)
