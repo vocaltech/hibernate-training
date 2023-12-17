@@ -27,7 +27,8 @@ public class Song {
 
 ![song_table](assets/song_table.png)
 
-#### Save a song in a table with Hibernate
+### Save a song in a table with Hibernate
+* * *
 
 1. Open a SessionFactory
     > `SessionFactory sf = HibernateUtils.getSessionFactory();`
