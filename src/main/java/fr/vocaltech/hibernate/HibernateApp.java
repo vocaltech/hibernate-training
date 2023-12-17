@@ -8,10 +8,9 @@ import org.hibernate.Transaction;
 
 public class HibernateApp {
     public static void main(String[] args) {
-        Session session = null;
         SessionFactory sf = HibernateUtils.getSessionFactory();
 
-        session = sf.openSession();
+        Session session = sf.openSession();
 
         Song song1 = new Song();
         song1.setSongName("songName1");
