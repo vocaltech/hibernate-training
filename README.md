@@ -1,4 +1,4 @@
-## Hibernate workshop
+# Hibernate workshop
 
 Some tutorials to master Hibernate framework.
 <br>
