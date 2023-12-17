@@ -1,8 +1,18 @@
 # Hibernate workshop
+### Some tutorials to master Hibernate framework.
 
-Some tutorials to master Hibernate framework.
-<br>
-We are using MariaDb as target database.
+
+`HibernateUtils.java` is a helper class with some useful methods:
+- doInTransaction(Consumer<Session> action) executes some action in a transaction block (ie, save operation).
+
+
+     doInTransaction(session -> {
+         clearPlaylistTable(session);
+         updateAutoIncrement(session, 1);
+     });
+
+
+
 
 ### Model: Song
 * * *
